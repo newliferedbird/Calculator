@@ -14,6 +14,7 @@ public class CalcMain {
         Stack<String> inStack = new Stack<>();
         Stack<String> outStack = new Stack<>();
         Stack<String> result = new Stack<>();
+        Stack<String> finalresult = new Stack<>();
 
         for (String val : inArray) {
             if (val.equals("+") || val.equals("-") || val.equals("*") || val.equals("/")) {
@@ -32,9 +33,9 @@ public class CalcMain {
             }
         }
 
-        formingOutStack(inStack, outStack);
+        formingOutStack(inStack, outStack, finalresult);
 
-        Calculated(outStack, result);
+        Calculated(finalresult, result);
 
         System.out.println(Integer.parseInt(result.pop()));
 
@@ -54,45 +55,51 @@ public class CalcMain {
         }
     }
 
-    public static void formingOutStack(Stack<String> inStack, Stack<String> outStack) {
+    public static void formingOutStack(Stack<String> inStack, Stack<String> outStack, Stack<String> finalresult) {
         while (inStack.size() > 0) {
             outStack.add(inStack.pop());
         }
+        while (outStack.size() > 0) {
+            finalresult.add(outStack.pop());
+        }
     }
 
-    public static void Calculated(Stack<String> outStack, Stack<String> result) {
+    public static void Calculated(Stack<String> finalresult, Stack<String> result) {
 
-        while (outStack.size() > 0) {
-            if (outStack.peek().equals("+") || outStack.peek().equals("-") || outStack.peek().equals("*") || outStack.peek().equals("/")) {
-                switch (outStack.peek()) {
+        while (finalresult.size() > 0) {
+            if (finalresult.peek().equals("+") || finalresult.peek().equals("-") || finalresult.peek().equals("*") || finalresult.peek().equals("/")) {
+                switch (finalresult.peek()) {
                     case ("+"):
+                        finalresult.pop();
                         int x1 = Integer.parseInt(result.pop());
                         int x2 = Integer.parseInt(result.pop());
                         int finalresult1 = x1 + x2;
                         result.add(Integer.toString(finalresult1));
                         break;
                     case ("-"):
-                        int x3 = Integer.parseInt(result.pop());
-                        int x4 = Integer.parseInt(result.pop());
-                        int finalresult2 = x3-x4;
-                        result.add(Integer.toString(finalresult2));
+                        finalresult.pop();
+                        x1 = Integer.parseInt(result.pop());
+                        x2 = Integer.parseInt(result.pop());
+                        finalresult1 = x1 - x2;
+                        result.add(Integer.toString(finalresult1));
                         break;
                     case ("*"):
-                        int x5 = Integer.parseInt(result.pop());
-                        int x6 = Integer.parseInt(result.pop());
-                        int finalresult3 = x5*x6;
-                        result.add(Integer.toString(finalresult3));
+                        finalresult.pop();
+                        x1 = Integer.parseInt(result.pop());
+                        x2 = Integer.parseInt(result.pop());
+                        finalresult1 = x1 * x2;
+                        result.add(Integer.toString(finalresult1));
                         break;
                     case ("/"):
-                        int x7 = Integer.parseInt(result.pop());
-                        int x8 = Integer.parseInt(result.pop());
-                        int finalresult4 = x7/x8;
-                        result.add(Integer.toString(finalresult4));
+                        finalresult.pop();
+                        x1 = Integer.parseInt(result.pop());
+                        x2 = Integer.parseInt(result.pop());
+                        finalresult1 = x1 / x2;
+                        result.add(Integer.toString(finalresult1));
                         break;
                 }
-            }
-            else {
-                result.add(outStack.pop());
+            } else {
+                result.add(finalresult.pop());
             }
         }
     }
