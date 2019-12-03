@@ -40,6 +40,6 @@ public class Calculated extends ManipulationString {
                 result.add(polishNotation().pop());
             }
         }
-        System.out.print("Результат выражения: "+result);
+        System.out.println(result);
     }
 }
