@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e21b405b-7aef-4547-a8bc-edc38eba894a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Calculated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GettingString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ManipulationString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OutputClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calc v2/CalcMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CalcMain.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager" selected="Application.OutputClass">
     <configuration name="CalcMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -91,25 +86,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="411" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575134112413" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1575403119913">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1575405296128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575403119913" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1575403119913">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575405296128" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1575405296128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575403119913" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1575403119912">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575405296128" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1575405296128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575403119912" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1575403119913">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575405296128" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1575405296128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575403119913" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575405296128" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1575405264200">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575405264200" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1575405264200">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575405264200" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1575405264200">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575405264200" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1575405264200">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575405264200" />
     <state x="667" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1575397195742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575397195742" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ManipulationString.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Calculated.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Calculated.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
